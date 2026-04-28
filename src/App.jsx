@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import heroImage from './assets/Marie Berthelet photo pro.png';
 import resumePdf from './assets/Marie_Berthelet_CV.pdf';
 
@@ -225,11 +225,19 @@ const content = {
         summary: 'Conception d’un tunnel court et conforme pour simplifier la resiliation.',
         tags: ['Parcours', 'Legal UX', 'Conversion'],
         image: '/assets/resiliation-3-clics.png',
+        heroImage: '/assets/r3c/r3c-1.png',
         role: 'Legal UX, parcours',
         period: '2024',
+        heroHeadline: 'Conception d’un parcours de résiliation plus simple, plus court et plus clair',
         overview: 'Conception d’un parcours de resiliation conforme aux exigences legales tout en restant simple pour l’utilisateur.',
         focus: 'Reduction du nombre d’etapes, clarification des messages et design d’un tunnel court centre sur l’action.',
-        outcome: 'Un parcours plus direct, plus transparent et plus facile a finaliser.'
+        outcome: 'Un parcours plus direct, plus transparent et plus facile a finaliser.',
+        gallery: [
+          { src: '/assets/r3c/r3c-1.png', alt: 'Ecran type de contrat assurance résiliation en 3 clics' },
+          { src: '/assets/r3c/r3c-2.png', alt: 'Ecran formulaire assurance étape 3 résiliation en 3 clics' },
+          { src: '/assets/r3c/r3c-3.png', alt: 'Ecran récapitulatif assurance résiliation en 3 clics' },
+          { src: '/assets/r3c/r3c-4.png', alt: 'Ecran formulaire assurance étape 6 résiliation en 3 clics' }
+        ]
       },
       {
         slug: 'spotify-app',
@@ -487,11 +495,19 @@ const content = {
         summary: 'Design of a short, compliant funnel to simplify cancellation.',
         tags: ['Journey', 'Legal UX', 'Conversion'],
         image: '/assets/resiliation-3-clics.png',
+        heroImage: '/assets/r3c/r3c-1.png',
         role: 'Legal UX, journey design',
         period: '2024',
+        heroHeadline: 'Designing a simpler, shorter, and clearer cancellation journey',
         overview: 'Design of a compliant cancellation flow that still feels simple and direct for users.',
         focus: 'Reducing the number of steps, clarifying messaging, and shaping a short action-driven funnel.',
-        outcome: 'A more direct, transparent journey that is easier for users to complete.'
+        outcome: 'A more direct, transparent journey that is easier for users to complete.',
+        gallery: [
+          { src: '/assets/r3c/r3c-1.png', alt: '3-click cancellation insurance contract type screen' },
+          { src: '/assets/r3c/r3c-2.png', alt: '3-click cancellation insurance form step 3 screen' },
+          { src: '/assets/r3c/r3c-3.png', alt: '3-click cancellation insurance recap screen' },
+          { src: '/assets/r3c/r3c-4.png', alt: '3-click cancellation insurance form step 6 screen' }
+        ]
       },
       {
         slug: 'spotify-app',
@@ -814,7 +830,7 @@ export default function App() {
               </a>
               <div className="project-page-grid">
                 <div className="project-page-visual">
-                  <img className="project-page-image project-page-image-hero" src={currentProject.image} alt={`Preview ${currentProject.title}`} />
+                  <img className="project-page-image project-page-image-hero" src={currentProject.heroImage || currentProject.image} alt={`Preview ${currentProject.title}`} />
                 </div>
                 <div className="project-page-copy">
                   <span className="project-page-kicker">{currentProject.title}</span>
@@ -831,20 +847,35 @@ export default function App() {
                 <div className="project-story-title project-gallery-title">
                   <h2>{profile.projectPage.gallery}</h2>
                 </div>
-                <div className="project-gallery-grid">
-                  {currentProject.gallery.map((visual, index) => (
-                    <Fragment key={visual.src}>
-                      {currentProject.slug === 'banque-francaise-mutualiste' && index === 5 ? (
-                        <div className="project-gallery-divider">
-                          <h3>L'espace client BFM partie crédit : AVANT</h3>
-                        </div>
-                      ) : null}
-                      <figure className="project-gallery-card">
+                {currentProject.slug === 'banque-francaise-mutualiste' ? (
+                  <>
+                    <div className="project-gallery-grid">
+                      {currentProject.gallery.slice(0, 5).map((visual) => (
+                        <figure key={visual.src} className="project-gallery-card">
+                          <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                        </figure>
+                      ))}
+                    </div>
+                    <div className="project-gallery-divider">
+                      <h3>L'espace client BFM partie crédit : AVANT</h3>
+                    </div>
+                    <div className="project-gallery-grid">
+                      {currentProject.gallery.slice(5).map((visual) => (
+                        <figure key={visual.src} className="project-gallery-card">
+                          <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                        </figure>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <div className="project-gallery-grid">
+                    {currentProject.gallery.map((visual) => (
+                      <figure key={visual.src} className="project-gallery-card">
                         <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
                       </figure>
-                    </Fragment>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </section>
           ) : null}
