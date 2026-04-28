@@ -1144,6 +1144,25 @@ a {
   gap: 1.5rem;
 }
 
+.project-gallery-divider {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  padding: 1rem 1.25rem;
+  border-left: 6px solid #2c3b5b;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(44, 59, 91, 0.08), rgba(44, 59, 91, 0.02));
+}
+
+.project-gallery-divider h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #2c3b5b;
+}
+
 .project-gallery-card {
   margin: 0;
   padding: 1rem;

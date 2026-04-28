@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import heroImage from './assets/Marie Berthelet photo pro.png';
 import resumePdf from './assets/Marie_Berthelet_CV.pdf';
 
@@ -832,10 +832,17 @@ export default function App() {
                   <h2>{profile.projectPage.gallery}</h2>
                 </div>
                 <div className="project-gallery-grid">
-                  {currentProject.gallery.map((visual) => (
-                    <figure key={visual.src} className="project-gallery-card">
-                      <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
-                    </figure>
+                  {currentProject.gallery.map((visual, index) => (
+                    <Fragment key={visual.src}>
+                      {currentProject.slug === 'banque-francaise-mutualiste' && index === 5 ? (
+                        <div className="project-gallery-divider">
+                          <h3>L'espace client BFM partie crédit : AVANT</h3>
+                        </div>
+                      ) : null}
+                      <figure className="project-gallery-card">
+                        <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                      </figure>
+                    </Fragment>
                   ))}
                 </div>
               </div>
