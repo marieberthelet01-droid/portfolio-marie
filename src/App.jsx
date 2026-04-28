@@ -150,9 +150,62 @@ const content = {
         image: '/assets/banque-francaise-mutualiste.png',
         role: 'UX/UI, design system',
         period: '2024 - 2025',
+        heroHeadline: 'Refonte de l’espace client et harmonisation des parcours bancaires',
         overview: 'Refonte de parcours bancaires pour simplifier la comprehension des services et harmoniser les interfaces.',
         focus: 'Reprise des parcours cles, clarification des contenus et alignement avec des composants UI plus robustes.',
-        outcome: 'Des ecrans plus nets, une meilleure lisibilite et une base plus fiable pour faire evoluer le produit.'
+        outcome: 'Des ecrans plus nets, une meilleure lisibilite et une base plus fiable pour faire evoluer le produit.',
+        gallery: [
+          { src: '/assets/bfm/bfm-1.png', alt: 'Ecran documents Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-2.png', alt: 'Ecran detail credit Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-3.png', alt: 'Ecran RIB livret Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-4.png', alt: 'Ecran accueil espace client Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-5.png', alt: 'Ecran modification de date de prelevement Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-6.png', alt: 'Ecran remboursement anticipe Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-7.png', alt: 'Ecran modification de compte de prelevement Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-8.png', alt: 'Menu credits Banque Francaise Mutualiste' },
+          { src: '/assets/bfm/bfm-9.png', alt: 'Formulaire mon compte de prelevement Banque Francaise Mutualiste' }
+        ],
+        sections: [
+          {
+            title: 'Contexte',
+            text: 'Dans le cadre de la modernisation de l’espace client Banque Francaise Mutualiste, j’ai travaille sur plusieurs parcours a forte valeur d’usage: accueil, credits, epargne, documents et demandes de gestion. L’objectif etait de rendre l’experience plus claire, plus rassurante et plus coherente sur l’ensemble des ecrans.'
+          },
+          {
+            title: 'Objectifs :',
+            bullets: [
+              'Clarifier la lecture des informations bancaires et contractuelles',
+              'Uniformiser les composants et les patterns d’interface entre les parcours',
+              'Faciliter la consultation, le telechargement et les actions de gestion courantes',
+              'Moderniser l’espace client sans perdre les reperes des utilisateurs existants',
+              'Poser une base plus solide pour les evolutions futures du produit'
+            ]
+          },
+          {
+            title: 'Realisations',
+            subtitle: 'Interventions',
+            columns: [
+              [
+                'Refonte d’ecrans cles de l’espace client: page d’accueil, consultation de credits, historique, documents et epargne',
+                'Reprise de la hierarchie visuelle pour mieux faire ressortir les informations importantes, les statuts et les actions disponibles',
+                'Travail sur la structure des tableaux, des blocs de synthese et des formulaires pour fluidifier les usages'
+              ],
+              [
+                'Harmonisation UI des composants: cartes, onglets, tableaux, champs, boutons, barres de progression et messages de feedback',
+                'Amelioration de la lisibilite, des espacements et de la coherence d’ensemble entre les pages',
+                'Conception d’interfaces plus robustes pour des parcours de consultation comme pour des demandes de gestion'
+              ]
+            ]
+          },
+          {
+            title: 'Realisations',
+            subtitle: 'Impact',
+            bullets: [
+              'Une experience plus moderne et plus homogene sur l’espace client',
+              'Des ecrans plus lisibles pour consulter rapidement soldes, echeances, documents et informations de compte',
+              'Une base UI plus stable pour faire evoluer les parcours bancaires dans le temps'
+            ]
+          }
+        ]
       },
       {
         slug: 'caisse-des-depots',
@@ -359,9 +412,62 @@ const content = {
         image: '/assets/banque-francaise-mutualiste.png',
         role: 'UX/UI, design system',
         period: '2024 - 2025',
+        heroHeadline: 'Redesigning the client area and harmonizing core banking journeys',
         overview: 'Redesign of banking journeys to simplify service understanding and create more coherent interfaces.',
         focus: 'Reworking key journeys, clarifying content, and aligning the UI with stronger reusable components.',
-        outcome: 'Cleaner screens, better readability, and a more reliable foundation for future product changes.'
+        outcome: 'Cleaner screens, better readability, and a more reliable foundation for future product changes.',
+        gallery: [
+          { src: '/assets/bfm/bfm-1.png', alt: 'Banque Francaise Mutualiste documents screen' },
+          { src: '/assets/bfm/bfm-2.png', alt: 'Banque Francaise Mutualiste credit detail screen' },
+          { src: '/assets/bfm/bfm-3.png', alt: 'Banque Francaise Mutualiste savings account details screen' },
+          { src: '/assets/bfm/bfm-4.png', alt: 'Banque Francaise Mutualiste client area home screen' },
+          { src: '/assets/bfm/bfm-5.png', alt: 'Banque Francaise Mutualiste direct debit date change screen' },
+          { src: '/assets/bfm/bfm-6.png', alt: 'Banque Francaise Mutualiste early repayment screen' },
+          { src: '/assets/bfm/bfm-7.png', alt: 'Banque Francaise Mutualiste direct debit account change screen' },
+          { src: '/assets/bfm/bfm-8.png', alt: 'Banque Francaise Mutualiste credits menu screen' },
+          { src: '/assets/bfm/bfm-9.png', alt: 'Banque Francaise Mutualiste direct debit account form screen' }
+        ],
+        sections: [
+          {
+            title: 'Context',
+            text: 'As part of the modernization of the Banque Francaise Mutualiste client area, I worked on several high-value journeys: home, loans, savings, documents, and account management requests. The goal was to create a clearer, more reassuring, and more consistent experience across the platform.'
+          },
+          {
+            title: 'Objectives',
+            bullets: [
+              'Make banking and contractual information easier to read',
+              'Standardize interface components and patterns across journeys',
+              'Simplify consultation, document download, and common management actions',
+              'Modernize the client area while preserving familiar user landmarks',
+              'Create a stronger foundation for future product evolution'
+            ]
+          },
+          {
+            title: 'Execution',
+            subtitle: 'Contributions',
+            columns: [
+              [
+                'Redesign of key client-area screens: homepage, loan consultation, history, documents, and savings',
+                'Reworked visual hierarchy to better highlight important information, statuses, and available actions',
+                'Improved the structure of tables, summary blocks, and forms to support smoother use'
+              ],
+              [
+                'UI harmonization of components: cards, tabs, tables, fields, buttons, progress bars, and feedback states',
+                'Improved readability, spacing, and overall consistency across pages',
+                'Designed more robust interfaces for both consultation journeys and account-management requests'
+              ]
+            ]
+          },
+          {
+            title: 'Execution',
+            subtitle: 'Impact',
+            bullets: [
+              'A more modern and more consistent experience across the client area',
+              'Clearer screens for quickly reviewing balances, due dates, documents, and account information',
+              'A more stable UI foundation for evolving banking journeys over time'
+            ]
+          }
+        ]
       },
       {
         slug: 'caisse-des-depots',
@@ -719,6 +825,23 @@ export default function App() {
             <div className="project-page-wave" aria-hidden="true" />
           </section>
 
+          {currentProject.gallery ? (
+            <section className="project-story-section project-gallery-section">
+              <div className="container project-gallery-shell">
+                <div className="project-story-title project-gallery-title">
+                  <h2>{profile.projectPage.gallery}</h2>
+                </div>
+                <div className="project-gallery-grid">
+                  {currentProject.gallery.map((visual) => (
+                    <figure key={visual.src} className="project-gallery-card">
+                      <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            </section>
+          ) : null}
+
           {projectSections.map((section, index) => (
             <section key={`${currentProject.slug}-${section.title}-${index}`} className="project-story-section">
               <div className="container project-story-grid">
@@ -750,23 +873,6 @@ export default function App() {
               </div>
             </section>
           ))}
-
-          {currentProject.gallery ? (
-            <section className="project-story-section project-gallery-section">
-              <div className="container project-story-grid">
-                <div className="project-story-title">
-                  <h2>{profile.projectPage.gallery}</h2>
-                </div>
-                <div className="project-gallery-grid">
-                  {currentProject.gallery.map((visual) => (
-                    <figure key={visual.src} className="project-gallery-card">
-                      <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
-                    </figure>
-                  ))}
-                </div>
-              </div>
-            </section>
-          ) : null}
 
           <section className="section section-projects">
             <div className="container section-top">
