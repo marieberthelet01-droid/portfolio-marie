@@ -30,6 +30,18 @@ const content = {
     projectsLabel: 'Projets',
     projectsTitle: 'Projets selectionnes',
     projectsDescription: '',
+    projectPage: {
+      back: 'Retour aux projets',
+      eyebrow: 'Etude de cas',
+      role: 'Role',
+      period: 'Periode',
+      overview: 'Contexte',
+      focus: 'Approche',
+      outcome: 'Impact',
+      constraints: 'Contraintes',
+      related: 'Autres projets',
+      gallery: 'Visuels du parcours'
+    },
     experiencesTitle: 'Mes experiences',
     projectsMiniTitle: 'Mes projets',
     experiences: [
@@ -70,40 +82,125 @@ const content = {
     },
     projects: [
       {
+        slug: 'apec',
         title: 'APEC',
         summary: 'Conception produit et amelioration de l’experience pour des parcours d’accompagnement et de service.',
         tags: ['UX', 'UI', 'Service design'],
-        image: '/assets/apec.jpg'
+        image: '/assets/apec.jpg',
+        role: 'Product design, UX/UI',
+        period: '2025 - 2026',
+        heroHeadline: 'Conception d’un simulateur d’entretien conversationnel IA',
+        overview: 'Conception de parcours et d’interfaces pour mieux accompagner les usagers dans leurs demarches et rendre les services plus clairs.',
+        focus: 'Travail sur la structure des ecrans, la priorisation de l’information et la fluidite des parcours avec une approche orientee service.',
+        outcome: 'Une experience plus lisible, plus coherente entre les points de contact et plus simple a prendre en main.',
+        gallery: [
+          { src: '/assets/apec/apec-step-1.png', alt: 'Ecran de personnalisation de l’entretien APEC' },
+          { src: '/assets/apec/apec-step-2.png', alt: 'Ecran de verification du microphone et de la camera APEC' },
+          { src: '/assets/apec/apec-step-3.png', alt: 'Ecran d’entretien virtuel APEC' },
+          { src: '/assets/apec/apec-step-4.png', alt: 'Ecran de synthese finale APEC' }
+        ],
+        sections: [
+          {
+            title: 'Contexte',
+            text: 'Dans le cadre du developpement d’un nouvel outil innovant de simulateur d’entretien base sur l’intelligence artificielle, j’ai ete en charge du cadrage et de la conception du projet, depuis la comprehension des besoins utilisateurs jusqu’a la definition des parcours et des premieres solutions de design, en lien etroit avec les enjeux produit et techniques.'
+          },
+          {
+            title: 'Objectifs :',
+            bullets: [
+              'Cadrer une experience utile et alignee avec les besoins des utilisateurs APEC',
+              'Concevoir et structurer des parcours pedagogiques et interactifs',
+              'Valoriser le contenu et le feedback (UX writing)',
+              'Assurer la coherence UI et l’accessibilite',
+              'Concevoir une experience conversationnelle basee sur l’IA'
+            ]
+          },
+          {
+            title: 'Realisations',
+            subtitle: 'Taches',
+            columns: [
+              [
+                'Exploration & comprehension du contexte: analyser l’existant, collecter les besoins metiers, interroger les parties prenantes',
+                'Participer aux specifications fonctionnelles: priorisation des fonctionnalites et definition des objectifs',
+                'Conception UX: wireframes, flows et creation des user flows detailles pour toutes les actions'
+              ],
+              [
+                'Concevoir les maquettes haute-fidelite: assurer la coherence UI sur desktop, mobile, tablette, travailler les etats',
+                'Tests utilisateurs & validation: preparer les scripts de tests, organiser et animer des sessions',
+                'Structuration des interactions utilisateur / IA',
+                'Conception des contenus et feedbacks (UX writing)'
+              ]
+            ]
+          },
+          {
+            title: 'Realisations',
+            subtitle: 'Contraintes',
+            bullets: [
+              'Concevoir une experience comprehensible pour des profils varies: jeunes diplomes, cadres experimentes',
+              'Contraintes techniques: integration avec des briques IA, temps de reponse, performance, stabilite',
+              'Contraintes ethiques et reglementaires: protection des donnees utilisateurs (RGPD) et transparence sur l’usage de l’IA'
+            ]
+          }
+        ]
       },
       {
+        slug: 'banque-francaise-mutualiste',
         title: 'Banque Francaise Mutualiste',
         summary: 'Refonte de parcours bancaires et amelioration de la lisibilite des ecrans.',
         tags: ['UX', 'UI', 'Design System'],
-        image: '/assets/banque-francaise-mutualiste.png'
+        image: '/assets/banque-francaise-mutualiste.png',
+        role: 'UX/UI, design system',
+        period: '2024 - 2025',
+        overview: 'Refonte de parcours bancaires pour simplifier la comprehension des services et harmoniser les interfaces.',
+        focus: 'Reprise des parcours cles, clarification des contenus et alignement avec des composants UI plus robustes.',
+        outcome: 'Des ecrans plus nets, une meilleure lisibilite et une base plus fiable pour faire evoluer le produit.'
       },
       {
+        slug: 'caisse-des-depots',
         title: 'Caisse des Depots',
         summary: 'Conception d’une application metier pour les gestionnaires afin de liquider la retraite des mineurs, en reunissant plusieurs outils dans une plateforme simple, intuitive et accessible.',
         tags: ['UX/UI', 'Accessibilite RGAA', 'Tests utilisateurs'],
-        image: '/assets/cdc.png'
+        image: '/assets/cdc.png',
+        role: 'UX/UI, accessibilite RGAA',
+        period: '2022 - 2023',
+        overview: 'Creation d’une application metier unifiee pour remplacer plusieurs outils et simplifier le traitement de dossiers complexes.',
+        focus: 'Organisation des parcours, travail sur les cas metier, prototypage et prise en compte des contraintes d’accessibilite.',
+        outcome: 'Une plateforme plus intuitive pour les gestionnaires, avec moins de friction entre les etapes du traitement.'
       },
       {
+        slug: 'resiliation-en-3-clics',
         title: 'Resiliation en 3 clics',
         summary: 'Conception d’un tunnel court et conforme pour simplifier la resiliation.',
         tags: ['Parcours', 'Legal UX', 'Conversion'],
-        image: '/assets/resiliation-3-clics.png'
+        image: '/assets/resiliation-3-clics.png',
+        role: 'Legal UX, parcours',
+        period: '2024',
+        overview: 'Conception d’un parcours de resiliation conforme aux exigences legales tout en restant simple pour l’utilisateur.',
+        focus: 'Reduction du nombre d’etapes, clarification des messages et design d’un tunnel court centre sur l’action.',
+        outcome: 'Un parcours plus direct, plus transparent et plus facile a finaliser.'
       },
       {
+        slug: 'spotify-app',
         title: 'Spotify app',
         summary: 'Exploration d’une nouvelle fonctionnalite autour du blind test dans l’experience mobile.',
         tags: ['Concept', 'Mobile', 'Feature design'],
-        image: '/assets/spotify-blind-test.jpg'
+        image: '/assets/spotify-blind-test.jpg',
+        role: 'Concept produit, mobile',
+        period: 'Concept',
+        overview: 'Exploration d’une fonctionnalite de blind test imaginee pour enrichir l’experience sociale et ludique de l’app.',
+        focus: 'Scenario d’usage, mecanique de jeu, interaction mobile et mise en scene de la fonctionnalite.',
+        outcome: 'Un concept clair et engageant, pense pour stimuler l’usage et la decouverte musicale.'
       },
       {
+        slug: 'yoha-online-project',
         title: 'Yoha online project',
         summary: 'Direction produit et interface pour une experience bien-etre orientee usage et engagement.',
         tags: ['Wellness', 'UX/UI', 'Product design'],
-        image: '/assets/yoha-home.jpg'
+        image: '/assets/yoha-home.jpg',
+        role: 'Product direction, UX/UI',
+        period: '2023',
+        overview: 'Definition d’une experience digitale bien-etre structuree autour de la clarte du parcours et de l’engagement dans le temps.',
+        focus: 'Vision produit, hierarchie des contenus et articulation entre promesse, usage et interface.',
+        outcome: 'Une base produit plus coherente, avec une experience plus fluide et plus motivante pour l’utilisateur.'
       }
     ],
     competencies: [
@@ -142,6 +239,18 @@ const content = {
     projectsLabel: 'Projects',
     projectsTitle: 'Selected projects',
     projectsDescription: '',
+    projectPage: {
+      back: 'Back to projects',
+      eyebrow: 'Case study',
+      role: 'Role',
+      period: 'Period',
+      overview: 'Context',
+      focus: 'Approach',
+      outcome: 'Impact',
+      constraints: 'Constraints',
+      related: 'More projects',
+      gallery: 'Journey visuals'
+    },
     experiencesTitle: 'My experience',
     projectsMiniTitle: 'My projects',
     experiences: [
@@ -182,40 +291,125 @@ const content = {
     },
     projects: [
       {
+        slug: 'apec',
         title: 'APEC',
         summary: 'Product design and experience improvements for coaching and service-oriented journeys.',
         tags: ['UX', 'UI', 'Service design'],
-        image: '/assets/apec.jpg'
+        image: '/assets/apec.jpg',
+        role: 'Product design, UX/UI',
+        period: '2025 - 2026',
+        heroHeadline: 'Designing an AI conversational interview simulator',
+        overview: 'Design of journeys and interfaces to better support users in their tasks and make services easier to understand.',
+        focus: 'Work on screen structure, information prioritization, and journey fluidity through a service design lens.',
+        outcome: 'A clearer, more consistent experience across touchpoints and easier onboarding for users.',
+        gallery: [
+          { src: '/assets/apec/apec-step-1.png', alt: 'APEC interview personalization screen' },
+          { src: '/assets/apec/apec-step-2.png', alt: 'APEC microphone and camera check screen' },
+          { src: '/assets/apec/apec-step-3.png', alt: 'APEC virtual interview screen' },
+          { src: '/assets/apec/apec-step-4.png', alt: 'APEC final summary screen' }
+        ],
+        sections: [
+          {
+            title: 'Context',
+            text: 'As part of the development of a new interview simulator powered by artificial intelligence, I led the framing and design of the project, from understanding user needs to defining journeys and the first design directions, in close connection with both product and technical constraints.'
+          },
+          {
+            title: 'Objectives',
+            bullets: [
+              'Frame an experience aligned with APEC user needs',
+              'Design and structure pedagogical and interactive journeys',
+              'Bring more value to content and feedback through UX writing',
+              'Ensure UI consistency and accessibility',
+              'Design a conversational experience powered by AI'
+            ]
+          },
+          {
+            title: 'Execution',
+            subtitle: 'Tasks',
+            columns: [
+              [
+                'Context exploration and discovery: audit the existing experience, collect business needs, interview stakeholders',
+                'Contribute to functional specifications: prioritize features and define objectives',
+                'UX design: wireframes, flows, and detailed user journeys for all key actions'
+              ],
+              [
+                'High-fidelity mockups: ensure UI consistency across desktop, tablet, and mobile',
+                'User testing and validation: prepare scripts, organize and facilitate testing sessions',
+                'Structure user / AI interactions',
+                'Design content and feedback patterns through UX writing'
+              ]
+            ]
+          },
+          {
+            title: 'Execution',
+            subtitle: 'Constraints',
+            bullets: [
+              'Design an understandable experience for varied profiles, from young graduates to senior executives',
+              'Technical constraints: AI integration, response time, performance, stability',
+              'Ethical and regulatory constraints: data protection, GDPR compliance, and transparency around AI usage'
+            ]
+          }
+        ]
       },
       {
+        slug: 'banque-francaise-mutualiste',
         title: 'Banque Francaise Mutualiste',
         summary: 'Redesign of banking journeys and clearer, easier-to-read interfaces.',
         tags: ['UX', 'UI', 'Design System'],
-        image: '/assets/banque-francaise-mutualiste.png'
+        image: '/assets/banque-francaise-mutualiste.png',
+        role: 'UX/UI, design system',
+        period: '2024 - 2025',
+        overview: 'Redesign of banking journeys to simplify service understanding and create more coherent interfaces.',
+        focus: 'Reworking key journeys, clarifying content, and aligning the UI with stronger reusable components.',
+        outcome: 'Cleaner screens, better readability, and a more reliable foundation for future product changes.'
       },
       {
+        slug: 'caisse-des-depots',
         title: 'Caisse des Depots',
         summary: 'Design of a business application for administrators to process miners’ retirement claims by merging several tools into one platform that is simple, intuitive, and accessible.',
         tags: ['UX/UI', 'RGAA accessibility', 'User testing'],
-        image: '/assets/cdc.png'
+        image: '/assets/cdc.png',
+        role: 'UX/UI, accessibility',
+        period: '2022 - 2023',
+        overview: 'Creation of a unified business application to replace multiple tools and simplify the handling of complex files.',
+        focus: 'Journey design, business-case mapping, prototyping, and accessibility constraints built into the process.',
+        outcome: 'A more intuitive platform for administrators, with less friction between each processing step.'
       },
       {
+        slug: 'resiliation-en-3-clics',
         title: '3-click cancellation',
         summary: 'Design of a short, compliant funnel to simplify cancellation.',
         tags: ['Journey', 'Legal UX', 'Conversion'],
-        image: '/assets/resiliation-3-clics.png'
+        image: '/assets/resiliation-3-clics.png',
+        role: 'Legal UX, journey design',
+        period: '2024',
+        overview: 'Design of a compliant cancellation flow that still feels simple and direct for users.',
+        focus: 'Reducing the number of steps, clarifying messaging, and shaping a short action-driven funnel.',
+        outcome: 'A more direct, transparent journey that is easier for users to complete.'
       },
       {
+        slug: 'spotify-app',
         title: 'Spotify app',
         summary: 'Exploration of a new blind-test feature within the mobile experience.',
         tags: ['Concept', 'Mobile', 'Feature design'],
-        image: '/assets/spotify-blind-test.jpg'
+        image: '/assets/spotify-blind-test.jpg',
+        role: 'Product concept, mobile',
+        period: 'Concept',
+        overview: 'Exploration of a blind-test feature imagined to enrich the social and playful side of the app.',
+        focus: 'Usage scenario, game mechanics, mobile interaction, and overall feature storytelling.',
+        outcome: 'A clear, engaging concept designed to drive usage and music discovery.'
       },
       {
+        slug: 'yoha-online-project',
         title: 'Yoha online project',
         summary: 'Product direction and interface design for a wellness experience focused on usage and engagement.',
         tags: ['Wellness', 'UX/UI', 'Product design'],
-        image: '/assets/yoha-home.jpg'
+        image: '/assets/yoha-home.jpg',
+        role: 'Product direction, UX/UI',
+        period: '2023',
+        overview: 'Definition of a wellness digital experience structured around journey clarity and long-term engagement.',
+        focus: 'Product vision, content hierarchy, and alignment between promise, usage, and interface.',
+        outcome: 'A more coherent product foundation with a smoother and more motivating user experience.'
       }
     ],
     competencies: [
@@ -238,13 +432,43 @@ const baseProfile = {
 };
 
 function getPageFromHash(hash) {
-  return hash === '#about' ? 'resume' : 'home';
+  if (hash === '#about') {
+    return 'resume';
+  }
+
+  if (hash.startsWith('#project/')) {
+    return 'project';
+  }
+
+  return 'home';
+}
+
+function getProjectSlugFromHash(hash) {
+  return hash.startsWith('#project/') ? decodeURIComponent(hash.slice('#project/'.length)) : '';
+}
+
+function getDefaultProjectSections(project, labels) {
+  return [
+    {
+      title: labels.overview,
+      text: project.overview
+    },
+    {
+      title: labels.focus,
+      text: project.focus
+    },
+    {
+      title: labels.outcome,
+      text: project.outcome
+    }
+  ];
 }
 
 export default function App() {
   const [language, setLanguage] = useState('fr');
   const [theme, setTheme] = useState(() => window.localStorage.getItem('theme') || 'light');
   const [currentPage, setCurrentPage] = useState(() => getPageFromHash(window.location.hash));
+  const [currentProjectSlug, setCurrentProjectSlug] = useState(() => getProjectSlugFromHash(window.location.hash));
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formMessage, setFormMessage] = useState('');
   const resumeProjectsRef = useRef(null);
@@ -255,10 +479,23 @@ export default function App() {
     ...baseProfile,
     ...content[language]
   }), [language]);
+  const currentProject = useMemo(
+    () => profile.projects.find((project) => project.slug === currentProjectSlug) || null,
+    [profile, currentProjectSlug]
+  );
+  const relatedProjects = useMemo(
+    () => profile.projects.filter((project) => project.slug !== currentProjectSlug).slice(0, 3),
+    [profile, currentProjectSlug]
+  );
+  const projectSections = useMemo(
+    () => (currentProject ? currentProject.sections || getDefaultProjectSections(currentProject, profile.projectPage) : []),
+    [currentProject, profile]
+  );
 
   useEffect(() => {
     function handleHashChange() {
       setCurrentPage(getPageFromHash(window.location.hash));
+      setCurrentProjectSlug(getProjectSlugFromHash(window.location.hash));
     }
 
     window.addEventListener('hashchange', handleHashChange);
@@ -286,6 +523,7 @@ export default function App() {
     if (currentPage !== 'home') {
       window.location.hash = '';
       setCurrentPage('home');
+      setCurrentProjectSlug('');
       window.setTimeout(() => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -309,6 +547,13 @@ export default function App() {
 
     const offset = Math.min(container.clientWidth * 0.9, 420) * direction;
     container.scrollBy({ left: offset, behavior: 'smooth' });
+  }
+
+  function openProject(projectSlug) {
+    window.location.hash = `#project/${projectSlug}`;
+    setCurrentProjectSlug(projectSlug);
+    setCurrentPage('project');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   return (
@@ -427,7 +672,12 @@ export default function App() {
               </button>
               <div ref={resumeProjectsRef} className="project-scroll">
                 {profile.projects.map((project) => (
-                  <article key={project.title} className="project-card project-card-scroll">
+                  <button
+                    key={project.title}
+                    type="button"
+                    className="project-card project-card-scroll project-card-button"
+                    onClick={() => openProject(project.slug)}
+                  >
                     <div className="project-thumb">
                       <img className="project-image" src={project.image} alt={`Preview ${project.title}`} />
                     </div>
@@ -440,12 +690,113 @@ export default function App() {
                         ))}
                       </ul>
                     </div>
-                  </article>
+                  </button>
                 ))}
               </div>
               <button type="button" className="project-arrow project-arrow-right" onClick={() => scrollProjects(resumeProjectsRef, 1)} aria-label="Projet suivant">
                 →
               </button>
+            </div>
+          </section>
+        </main>
+      ) : currentPage === 'project' && currentProject ? (
+        <main className="project-page">
+          <section className="project-page-hero">
+            <div className="container project-page-hero-inner">
+              <a className="project-back-link" href="#work" onClick={() => showHomeSection('work')}>
+                ← {profile.projectPage.back}
+              </a>
+              <div className="project-page-grid">
+                <div className="project-page-visual">
+                  <img className="project-page-image project-page-image-hero" src={currentProject.image} alt={`Preview ${currentProject.title}`} />
+                </div>
+                <div className="project-page-copy">
+                  <span className="project-page-kicker">{currentProject.title}</span>
+                  <h1>{currentProject.heroHeadline || currentProject.summary}</h1>
+                </div>
+              </div>
+            </div>
+            <div className="project-page-wave" aria-hidden="true" />
+          </section>
+
+          {projectSections.map((section, index) => (
+            <section key={`${currentProject.slug}-${section.title}-${index}`} className="project-story-section">
+              <div className="container project-story-grid">
+                <div className="project-story-title">
+                  <h2>{section.title}</h2>
+                  {section.subtitle ? <h3>{section.subtitle}</h3> : null}
+                </div>
+                <div className="project-story-content">
+                  {section.text ? <p>{section.text}</p> : null}
+                  {section.bullets ? (
+                    <ul className="project-story-list">
+                      {section.bullets.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  {section.columns ? (
+                    <div className="project-story-columns">
+                      {section.columns.map((column, columnIndex) => (
+                        <ul key={`${section.title}-col-${columnIndex}`} className="project-story-list">
+                          {column.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            </section>
+          ))}
+
+          {currentProject.gallery ? (
+            <section className="project-story-section project-gallery-section">
+              <div className="container project-story-grid">
+                <div className="project-story-title">
+                  <h2>{profile.projectPage.gallery}</h2>
+                </div>
+                <div className="project-gallery-grid">
+                  {currentProject.gallery.map((visual) => (
+                    <figure key={visual.src} className="project-gallery-card">
+                      <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            </section>
+          ) : null}
+
+          <section className="section section-projects">
+            <div className="container section-top">
+              <div className="section-head">
+                <span className="section-label">{profile.projectsLabel}</span>
+                <h2>{profile.projectPage.related}</h2>
+              </div>
+            </div>
+            <div className="container project-grid project-grid-related">
+              {relatedProjects.map((project) => (
+                <button
+                  key={`related-${project.slug}`}
+                  type="button"
+                  className="project-card project-card-button"
+                  onClick={() => openProject(project.slug)}
+                >
+                  <div className="project-thumb">
+                    <img className="project-image" src={project.image} alt={`Preview ${project.title}`} />
+                  </div>
+                  <div className="project-body">
+                    <h3>{project.title}</h3>
+                    <p>{project.summary}</p>
+                    <ul className="tag-list">
+                      {project.tags.map((tag) => (
+                        <li key={`${project.slug}-${tag}`}>{tag}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </button>
+              ))}
             </div>
           </section>
         </main>
@@ -507,7 +858,12 @@ export default function App() {
                       <h2 className="hero-experience-title">{profile.projectsMiniTitle}</h2>
                       <div className="hero-project-cards">
                         {profile.projects.slice(0, 2).map((project) => (
-                          <article key={`hero-${project.title}`} className="hero-project-card">
+                          <button
+                            key={`hero-${project.title}`}
+                            type="button"
+                            className="hero-project-card hero-project-card-button"
+                            onClick={() => openProject(project.slug)}
+                          >
                             <div className="hero-project-thumb">
                               <img className="hero-project-image" src={project.image} alt={`Apercu du projet ${project.title}`} />
                             </div>
@@ -515,7 +871,7 @@ export default function App() {
                               <h3>{project.title}</h3>
                               <p>{project.summary}</p>
                             </div>
-                          </article>
+                          </button>
                         ))}
                       </div>
                     </div>
@@ -554,10 +910,12 @@ export default function App() {
               </button>
               <div ref={homeProjectsRef} className="project-scroll">
                 {profile.projects.map((project) => (
-                  <article
+                  <button
                     key={project.title}
                     id={`project-${project.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                    className="project-card project-card-scroll"
+                    type="button"
+                    className="project-card project-card-scroll project-card-button"
+                    onClick={() => openProject(project.slug)}
                   >
                     <div className="project-thumb">
                       <img className="project-image" src={project.image} alt={`Apercu du projet ${project.title}`} />
@@ -571,7 +929,7 @@ export default function App() {
                         ))}
                       </ul>
                     </div>
-                  </article>
+                  </button>
                 ))}
               </div>
               <button type="button" className="project-arrow project-arrow-right" onClick={() => scrollProjects(homeProjectsRef, 1)} aria-label="Next project">
