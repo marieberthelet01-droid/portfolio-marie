@@ -143,6 +143,75 @@ const content = {
         ]
       },
       {
+        slug: 'daxium',
+        title: 'Daxium',
+        summary: 'Conception UX/UI pour des parcours terrain et des interfaces metier plus efficaces.',
+        tags: ['UX/UI', 'Produit', 'Interface metier'],
+        image: '/assets/daxium.png',
+        heroImage: '/assets/daxium/daxium-1.png',
+        role: 'UX/UI, product design',
+        period: '2021',
+        heroHeadline: 'Conception d’interfaces metier pour des usages terrain plus fluides',
+        overview: 'Travail sur des interfaces et parcours destines a des usages operationnels, avec un enjeu fort de clarte, d’efficacite et de prise en main rapide sur le terrain.',
+        focus: 'Structuration de l’information, simplification des ecrans, priorisation des actions utiles et adaptation a des contextes d’usage concrets.',
+        outcome: 'Des parcours plus lisibles et plus rapides a executer, avec une interface mieux alignee sur les besoins metier.',
+        gallery: [
+          { src: '/assets/daxium/daxium-1.png', alt: 'Daxium empathize workshop synthesis' },
+          { src: '/assets/daxium/daxium-2.png', alt: 'Daxium persona Terrain Thierry' },
+          { src: '/assets/daxium/daxium-3.png', alt: 'Daxium persona Manager Marc' },
+          { src: '/assets/daxium/daxium-4.png', alt: 'Daxium persona Parametreur Paul' },
+          { src: '/assets/daxium/daxium-5.png', alt: 'Daxium journey map Parametreur Paul' },
+          { src: '/assets/daxium/daxium-6.png', alt: 'Daxium journey map Manager Marc' },
+          { src: '/assets/daxium/daxium-7.png', alt: 'Daxium journey map Terrain Thierry' },
+          { src: '/assets/daxium/daxium-8.png', alt: 'Daxium ideation context slide' },
+          { src: '/assets/daxium/daxium-9.png', alt: 'Daxium ideation sticky notes board' },
+          { src: '/assets/daxium/daxium-10.png', alt: 'Daxium how might we solutions board' },
+          { src: '/assets/daxium/daxium-11.png', alt: 'Daxium prioritized solutions matrix' },
+          { src: '/assets/daxium/daxium-12.png', alt: 'Daxium user flow Terrain Thierry' },
+          { src: '/assets/daxium/daxium-13.png', alt: 'Daxium user flow Parametreur Paul' }
+        ],
+        sections: [
+          {
+            title: 'Contexte',
+            text: 'Chez Daxium, j’ai contribue a la conception d’interfaces metier orientees terrain. Le travail portait sur des outils utilises dans des contextes operationnels, ou la rapidite d’execution, la lisibilite et la fiabilite de l’information sont essentielles.'
+          },
+          {
+            title: 'Objectifs :',
+            bullets: [
+              'Simplifier des parcours metier parfois denses ou tres operationnels',
+              'Rendre les ecrans plus lisibles et plus actionnables',
+              'Mieux aligner les interfaces avec les usages reels sur le terrain',
+              'Ameliorer la coherence UX/UI entre les differentes vues du produit'
+            ]
+          },
+          {
+            title: 'Realisations',
+            subtitle: 'Interventions',
+            columns: [
+              [
+                'Analyse des besoins et des irritants sur les parcours existants',
+                'Reprise de la hierarchie visuelle et de la structure des ecrans',
+                'Conception de propositions UX/UI plus simples et plus robustes'
+              ],
+              [
+                'Clarification des zones d’action et des informations prioritaires',
+                'Travail sur la coherence des composants d’interface',
+                'Contribution a une experience plus fluide pour les utilisateurs metier'
+              ]
+            ]
+          },
+          {
+            title: 'Realisations',
+            subtitle: 'Impact',
+            bullets: [
+              'Une meilleure comprehension des ecrans par les utilisateurs',
+              'Des interactions plus directes dans les usages terrain',
+              'Une base interface plus propre pour les evolutions produit'
+            ]
+          }
+        ]
+      },
+      {
         slug: 'banque-francaise-mutualiste',
         title: 'Banque Francaise Mutualiste',
         summary: 'Refonte de parcours bancaires et amelioration de la lisibilite des ecrans.',
@@ -408,6 +477,75 @@ const content = {
               'Design an understandable experience for varied profiles, from young graduates to senior executives',
               'Technical constraints: AI integration, response time, performance, stability',
               'Ethical and regulatory constraints: data protection, GDPR compliance, and transparency around AI usage'
+            ]
+          }
+        ]
+      },
+      {
+        slug: 'daxium',
+        title: 'Daxium',
+        summary: 'UX/UI design for field-oriented journeys and more efficient business interfaces.',
+        tags: ['UX/UI', 'Product', 'Business interface'],
+        image: '/assets/daxium.png',
+        heroImage: '/assets/daxium/daxium-1.png',
+        role: 'UX/UI, product design',
+        period: '2021',
+        heroHeadline: 'Designing business interfaces for smoother field operations',
+        overview: 'Work on interfaces and journeys designed for operational use cases, with strong needs around clarity, efficiency, and fast onboarding in the field.',
+        focus: 'Information architecture, screen simplification, prioritization of useful actions, and adaptation to real usage contexts.',
+        outcome: 'Clearer journeys, faster execution, and an interface more aligned with business needs.',
+        gallery: [
+          { src: '/assets/daxium/daxium-1.png', alt: 'Daxium empathize workshop synthesis' },
+          { src: '/assets/daxium/daxium-2.png', alt: 'Daxium persona Terrain Thierry' },
+          { src: '/assets/daxium/daxium-3.png', alt: 'Daxium persona Manager Marc' },
+          { src: '/assets/daxium/daxium-4.png', alt: 'Daxium persona Parametreur Paul' },
+          { src: '/assets/daxium/daxium-5.png', alt: 'Daxium journey map Parametreur Paul' },
+          { src: '/assets/daxium/daxium-6.png', alt: 'Daxium journey map Manager Marc' },
+          { src: '/assets/daxium/daxium-7.png', alt: 'Daxium journey map Terrain Thierry' },
+          { src: '/assets/daxium/daxium-8.png', alt: 'Daxium ideation context slide' },
+          { src: '/assets/daxium/daxium-9.png', alt: 'Daxium ideation sticky notes board' },
+          { src: '/assets/daxium/daxium-10.png', alt: 'Daxium how might we solutions board' },
+          { src: '/assets/daxium/daxium-11.png', alt: 'Daxium prioritized solutions matrix' },
+          { src: '/assets/daxium/daxium-12.png', alt: 'Daxium user flow Terrain Thierry' },
+          { src: '/assets/daxium/daxium-13.png', alt: 'Daxium user flow Parametreur Paul' }
+        ],
+        sections: [
+          {
+            title: 'Context',
+            text: 'At Daxium, I contributed to the design of field-oriented business interfaces. The work focused on tools used in operational contexts, where speed of execution, readability, and information reliability are essential.'
+          },
+          {
+            title: 'Objectives',
+            bullets: [
+              'Simplify dense and highly operational business journeys',
+              'Make screens easier to read and act upon',
+              'Better align interfaces with real field usage',
+              'Improve UX/UI consistency across product views'
+            ]
+          },
+          {
+            title: 'Execution',
+            subtitle: 'Contributions',
+            columns: [
+              [
+                'Analysis of user needs and friction points across existing journeys',
+                'Rework of visual hierarchy and screen structure',
+                'Design of simpler and more robust UX/UI proposals'
+              ],
+              [
+                'Clarification of action areas and priority information',
+                'Work on interface component consistency',
+                'Contribution to a smoother experience for business users'
+              ]
+            ]
+          },
+          {
+            title: 'Execution',
+            subtitle: 'Impact',
+            bullets: [
+              'Better screen comprehension for users',
+              'More direct interactions in field workflows',
+              'A cleaner interface foundation for future product evolution'
             ]
           }
         ]
