@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import heroImage from './assets/Marie Berthelet photo pro.png';
 import resumePdf from './assets/Marie_Berthelet_CV.pdf';
+import daxiumLogo from './assets/Daxium logo.png';
 
 const content = {
   fr: {
@@ -147,7 +148,7 @@ const content = {
         title: 'Daxium',
         summary: 'Conception UX/UI pour des parcours terrain et des interfaces metier plus efficaces.',
         tags: ['UX/UI', 'Produit', 'Interface metier'],
-        image: '/assets/daxium.png',
+        image: daxiumLogo,
         heroImage: '/assets/daxium/daxium-1.png',
         role: 'UX/UI, product design',
         period: '2021',
@@ -486,7 +487,7 @@ const content = {
         title: 'Daxium',
         summary: 'UX/UI design for field-oriented journeys and more efficient business interfaces.',
         tags: ['UX/UI', 'Product', 'Business interface'],
-        image: '/assets/daxium.png',
+        image: daxiumLogo,
         heroImage: '/assets/daxium/daxium-1.png',
         role: 'UX/UI, product design',
         period: '2021',
