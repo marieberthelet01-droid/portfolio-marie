@@ -53,7 +53,7 @@ const content = {
     ],
     contactLabel: 'Contact',
     contactTitle: 'Echangeons sur votre prochain produit',
-    contactDescription: 'Je suis disponible pour des missions freelance, design systems et experiences digitales.',
+    contactDescription: '',
     form: {
       name: 'Nom',
       email: 'Email',
@@ -392,7 +392,7 @@ const content = {
     ],
     contactLabel: 'Contact',
     contactTitle: 'Let’s talk about your next product',
-    contactDescription: 'Available for freelance missions, design systems, and digital product experiences.',
+    contactDescription: '',
     form: {
       name: 'Name',
       email: 'Email',
@@ -1226,7 +1226,7 @@ export default function App() {
               <div className="contact-info">
                 <span className="section-label">{profile.contactLabel}</span>
                 <h2>{profile.contactTitle}</h2>
-                <p>{profile.contactDescription}</p>
+                {profile.contactDescription ? <p>{profile.contactDescription}</p> : null}
               </div>
               <form className="contact-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">{profile.form.name}</label>
