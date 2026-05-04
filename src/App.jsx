@@ -9,7 +9,7 @@ const content = {
       home: 'Accueil',
       projects: 'Projets',
       contact: 'Contact',
-      resume: 'A propos'
+      resume: 'À propos'
     },
     theme: {
       light: 'Clair',
@@ -22,20 +22,20 @@ const content = {
     companyRole: 'product designer',
     companyIntroAfter: 'chez',
     description:
-      'Je conçois des experiences produit centrees utilisateur, de la strategie a l’interface, pour creer de la valeur business.',
-    contactCta: 'Ecrire un message',
+      'Je conçois des expériences produit centrées utilisateur, de la stratégie à l’interface, pour créer de la valeur business.',
+    contactCta: 'Écrire un message',
     linkedIn: 'LinkedIn',
-    skillsLabel: 'Competences',
+    skillsLabel: 'Compétences',
     skillsTitle: 'Ce que j’apporte aux produits',
-    skillsDescription: 'Un equilibre entre recherche, design et parcours utilisateur durable.',
+    skillsDescription: 'Un équilibre entre recherche, design et parcours utilisateur durable.',
     projectsLabel: 'Projets',
-    projectsTitle: 'Projets selectionnes',
+    projectsTitle: 'Projets sélectionnés',
     projectsDescription: '',
     projectPage: {
       back: 'Retour aux projets',
-      eyebrow: 'Etude de cas',
-      role: 'Role',
-      period: 'Periode',
+      eyebrow: 'Étude de cas',
+      role: 'Rôle',
+      period: 'Période',
       overview: 'Contexte',
       focus: 'Approche',
       outcome: 'Impact',
@@ -43,37 +43,37 @@ const content = {
       related: 'Autres projets',
       gallery: 'Visuels du parcours'
     },
-    experiencesTitle: 'Mes experiences',
+    experiencesTitle: 'Mes expériences',
     projectsMiniTitle: 'Mes projets',
     experiences: [
       { company: 'Daxium', period: '2021' },
-      { company: 'Caisse des depots', period: '2022 - 2023' },
+      { company: 'Caisse des dépôts', period: '2022 - 2023' },
       { company: 'Banque Francaise Mutualiste', period: '2024 - 2025' },
       { company: 'APEC', period: '2025 - 2026' }
     ],
     contactLabel: 'Contact',
-    contactTitle: 'Echangeons sur votre prochain produit',
+    contactTitle: 'Échangeons sur votre prochain produit',
     contactDescription: '',
     form: {
       name: 'Nom',
       email: 'Email',
       message: 'Message',
       submit: 'Envoyer',
-      success: (name) => `Merci${name ? ` ${name}` : ''} ! Ton message a bien ete envoye (simulation).`
+      success: (name) => `Merci${name ? ` ${name}` : ''} ! Ton message a bien été envoyé (simulation).`
     },
     resume: {
-      eyebrow: 'A propos',
+      eyebrow: 'À propos',
       title: 'Marie Berthelet, Product Designer',
       intro:
-        'Portfolio et CV concus comme une synthese claire de mes competences en UX, UI et conception de services.',
+        'Portfolio et CV conçus comme une synthèse claire de mes compétences en UX, UI et conception de services.',
       summaryTitle: 'Profil',
       summary:
-        'Product designer orientee impact, j’accompagne la conception de produits et services digitaux de la strategie a l’interface finale.',
+        'Product designer orientée impact, j’accompagne la conception de produits et services digitaux de la stratégie à l’interface finale.',
       sections: {
         expertise: 'Expertise',
-        tools: 'Methodes et outils',
+        tools: 'Méthodes et outils',
         highlights: 'Projets marquants',
-        contact: 'Coordonnees'
+        contact: 'Coordonnées'
       },
       tools: ['Figma', 'Design systems', 'Prototypage', 'Recherche utilisateur', 'Ateliers', 'Tests utilisateurs'],
       contactText: 'Disponible pour des missions produit, UX/UI et design systems.',
@@ -85,39 +85,39 @@ const content = {
       {
         slug: 'apec',
         title: 'APEC',
-        summary: 'Conception produit et amelioration de l’experience pour des parcours d’accompagnement et de service.',
+        summary: 'Conception produit et amélioration de l’expérience pour des parcours d’accompagnement et de service.',
         tags: ['UX', 'UI', 'Service design'],
         image: '/assets/apec.jpg',
         role: 'Product design, UX/UI',
         period: '2025 - 2026',
         heroHeadline: 'Conception d’un simulateur d’entretien conversationnel IA',
-        overview: 'Conception de parcours et d’interfaces pour mieux accompagner les usagers dans leurs demarches et rendre les services plus clairs.',
-        focus: 'Travail sur la structure des ecrans, la priorisation de l’information et la fluidite des parcours avec une approche orientee service.',
-        outcome: 'Une experience plus lisible, plus coherente entre les points de contact et plus simple a prendre en main.',
+        overview: 'Conception de parcours et d’interfaces pour mieux accompagner les usagers dans leurs démarches et rendre les services plus clairs.',
+        focus: 'Travail sur la structure des écrans, la priorisation de l’information et la fluidité des parcours avec une approche orientée service.',
+        outcome: 'Une expérience plus lisible, plus cohérente entre les points de contact et plus simple à prendre en main.',
         gallery: [
-          { src: '/assets/apec/apec-step-1.png', alt: 'Ecran de personnalisation de l’entretien APEC' },
-          { src: '/assets/apec/apec-step-2.png', alt: 'Ecran de verification du microphone et de la camera APEC' },
-          { src: '/assets/apec/apec-step-3.png', alt: 'Ecran d’entretien virtuel APEC' },
-          { src: '/assets/apec/apec-step-4.png', alt: 'Ecran de synthese finale APEC' }
+          { src: '/assets/apec/apec-step-1.png', alt: 'Écran de personnalisation de l’entretien APEC' },
+          { src: '/assets/apec/apec-step-2.png', alt: 'Écran de vérification du microphone et de la caméra APEC' },
+          { src: '/assets/apec/apec-step-3.png', alt: 'Écran d’entretien virtuel APEC' },
+          { src: '/assets/apec/apec-step-4.png', alt: 'Écran de synthèse finale APEC' }
         ],
         sections: [
           {
             title: 'Contexte',
-            text: 'Dans le cadre du developpement d’un nouvel outil innovant de simulateur d’entretien base sur l’intelligence artificielle, j’ai ete en charge du cadrage et de la conception du projet, depuis la comprehension des besoins utilisateurs jusqu’a la definition des parcours et des premieres solutions de design, en lien etroit avec les enjeux produit et techniques.'
+            text: 'Dans le cadre du développement d’un nouvel outil innovant de simulateur d’entretien basé sur l’intelligence artificielle, j’ai été en charge du cadrage et de la conception du projet, depuis la compréhension des besoins utilisateurs jusqu’à la définition des parcours et des premières solutions de design, en lien étroit avec les enjeux produit et techniques.'
           },
           {
             title: 'Objectifs :',
             bullets: [
-              'Cadrer une experience utile et alignee avec les besoins des utilisateurs APEC',
-              'Concevoir et structurer des parcours pedagogiques et interactifs',
+              'Cadrer une expérience utile et alignée avec les besoins des utilisateurs APEC',
+              'Concevoir et structurer des parcours pédagogiques et interactifs',
               'Valoriser le contenu et le feedback (UX writing)',
-              'Assurer la coherence UI et l’accessibilite',
-              'Concevoir une experience conversationnelle basee sur l’IA'
+              'Assurer la cohérence UI et l’accessibilité',
+              'Concevoir une expérience conversationnelle basée sur l’IA'
             ]
           },
           {
-            title: 'Realisations',
-            subtitle: 'Taches',
+            title: 'Réalisations',
+            subtitle: 'Tâches',
             columns: [
               [
                 'Exploration & comprehension du contexte: analyser l’existant, collecter les besoins metiers, interroger les parties prenantes',
