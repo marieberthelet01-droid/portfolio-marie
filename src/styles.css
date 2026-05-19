@@ -1134,6 +1134,61 @@ a {
   gap: 1.5rem;
 }
 
+.project-case-intro-section {
+  padding-bottom: 2rem;
+}
+
+.project-case-intro-shell {
+  display: grid;
+  gap: 3rem;
+}
+
+.project-case-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(320px, 1.2fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.project-case-intro-footer p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+.project-case-section {
+  padding-top: 4rem;
+}
+
+.project-case-paragraphs {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-case-paragraphs p {
+  margin: 0;
+}
+
+.project-case-shell {
+  display: grid;
+  gap: 2.25rem;
+  margin-top: 2rem;
+}
+
+.project-case-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-case-group-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: var(--accent-strong);
+}
+
 .project-gallery-title h2 {
   font-size: clamp(2.1rem, 4vw, 3.4rem);
 }
@@ -1178,6 +1233,14 @@ a {
   border-radius: 18px;
   background: #f3f1fb;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.project-case-grid-1 {
+  grid-template-columns: minmax(280px, 1fr);
+}
+
+.project-case-grid-3 {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
 }
 
 .project-grid {
@@ -1392,7 +1455,8 @@ a {
   .resume-hero,
   .contact-panel,
   .project-page-grid,
-  .project-story-grid {
+  .project-story-grid,
+  .project-case-intro-grid {
     grid-template-columns: 1fr;
     padding: 2rem;
   }
@@ -1422,7 +1486,8 @@ a {
   .project-grid-related,
   .project-meta-grid,
   .project-story-columns,
-  .project-gallery-grid {
+  .project-gallery-grid,
+  .project-case-grid-3 {
     grid-template-columns: 1fr;
   }
 

@@ -120,25 +120,25 @@ const content = {
             subtitle: 'Tâches',
             columns: [
               [
-                'Exploration & comprehension du contexte: analyser l’existant, collecter les besoins metiers, interroger les parties prenantes',
-                'Participer aux specifications fonctionnelles: priorisation des fonctionnalites et definition des objectifs',
-                'Conception UX: wireframes, flows et creation des user flows detailles pour toutes les actions'
+                'Exploration & compréhension du contexte: analyser l’existant, collecter les besoins métiers, interroger les parties prenantes',
+                'Participer aux spécifications fonctionnelles: priorisation des fonctionnalités et définition des objectifs',
+                'Conception UX: wireframes, flows et création des user flows détaillés pour toutes les actions'
               ],
               [
-                'Concevoir les maquettes haute-fidelite: assurer la coherence UI sur desktop, mobile, tablette, travailler les etats',
-                'Tests utilisateurs & validation: preparer les scripts de tests, organiser et animer des sessions',
+                'Concevoir les maquettes haute-fidélité: assurer la cohérence UI sur desktop, mobile, tablette, travailler les états',
+                'Tests utilisateurs & validation: préparer les scripts de tests, organiser et animer des sessions',
                 'Structuration des interactions utilisateur / IA',
                 'Conception des contenus et feedbacks (UX writing)'
               ]
             ]
           },
           {
-            title: 'Realisations',
+            title: 'Réalisations',
             subtitle: 'Contraintes',
             bullets: [
-              'Concevoir une experience comprehensible pour des profils varies: jeunes diplomes, cadres experimentes',
-              'Contraintes techniques: integration avec des briques IA, temps de reponse, performance, stabilite',
-              'Contraintes ethiques et reglementaires: protection des donnees utilisateurs (RGPD) et transparence sur l’usage de l’IA'
+              'Concevoir une expérience compréhensible pour des profils variés: jeunes diplômés, cadres expérimentés',
+              'Contraintes techniques: intégration avec des briques IA, temps de réponse, performance, stabilité',
+              'Contraintes éthiques et réglementaires: protection des données utilisateurs (RGPD) et transparence sur l’usage de l’IA'
             ]
           }
         ]
@@ -146,31 +146,147 @@ const content = {
       {
         slug: 'daxium',
         title: 'Daxium',
-        summary: 'Conception UX/UI pour des parcours terrain et des interfaces metier plus efficaces.',
+        summary: 'Conception UX/UI pour des parcours terrain et des interfaces métier plus efficaces.',
         tags: ['UX/UI', 'Produit', 'Interface metier'],
         image: daxiumLogo,
-        heroImage: '/assets/daxium/daxium-1.png',
+        heroImage: daxiumLogo,
         role: 'UX/UI, product design',
         period: '2021',
-        heroHeadline: 'Conception d’interfaces metier pour des usages terrain plus fluides',
-        overview: 'Travail sur des interfaces et parcours destines a des usages operationnels, avec un enjeu fort de clarte, d’efficacite et de prise en main rapide sur le terrain.',
-        focus: 'Structuration de l’information, simplification des ecrans, priorisation des actions utiles et adaptation a des contextes d’usage concrets.',
-        outcome: 'Des parcours plus lisibles et plus rapides a executer, avec une interface mieux alignee sur les besoins metier.',
-        gallery: [
-          { src: '/assets/daxium/daxium-1.png', alt: 'Daxium empathize workshop synthesis' },
-          { src: '/assets/daxium/daxium-2.png', alt: 'Daxium persona Terrain Thierry' },
-          { src: '/assets/daxium/daxium-3.png', alt: 'Daxium persona Manager Marc' },
-          { src: '/assets/daxium/daxium-4.png', alt: 'Daxium persona Parametreur Paul' },
-          { src: '/assets/daxium/daxium-5.png', alt: 'Daxium journey map Parametreur Paul' },
-          { src: '/assets/daxium/daxium-6.png', alt: 'Daxium journey map Manager Marc' },
-          { src: '/assets/daxium/daxium-7.png', alt: 'Daxium journey map Terrain Thierry' },
-          { src: '/assets/daxium/daxium-8.png', alt: 'Daxium ideation context slide' },
-          { src: '/assets/daxium/daxium-9.png', alt: 'Daxium ideation sticky notes board' },
-          { src: '/assets/daxium/daxium-10.png', alt: 'Daxium how might we solutions board' },
-          { src: '/assets/daxium/daxium-11.png', alt: 'Daxium prioritized solutions matrix' },
-          { src: '/assets/daxium/daxium-12.png', alt: 'Daxium user flow Terrain Thierry' },
-          { src: '/assets/daxium/daxium-13.png', alt: 'Daxium user flow Parametreur Paul' }
-        ],
+        heroHeadline: 'Refonte UX d’un produit no-code au service des équipes terrain',
+        overview: 'Daxium est un logiciel no-code qui permet de digitaliser les activités d’équipes nomades grâce à des applications mobiles personnalisées.',
+        focus: 'Le travail a porté sur la compréhension des usages, la simplification des parcours et la structuration d’une expérience plus lisible pour le terrain comme pour les paramétreurs.',
+        outcome: 'Le projet a permis d’identifier des irritants majeurs, de formuler des pistes de conception concrètes et de prototyper une expérience plus fluide et plus accessible.',
+        caseStudy: {
+          intro: {
+            title: 'Introduction',
+            side: [
+              'Daxium est un logiciel no-code qui permet de digitaliser les activités d’équipes nomades. Il offre la possibilité de créer des applications mobiles adaptées à des contextes terrain très différents.',
+              'La mission du produit est de fluidifier les échanges opérationnels entre l’entreprise, les responsables et les équipes terrain, tout en rendant la donnée plus exploitable et mieux structurée.'
+            ],
+            footer:
+              'Pendant plus de dix ans, Daxium s’est principalement construit avec une logique d’ingénierie et de robustesse fonctionnelle. Mon intervention s’inscrit dans une phase de redesign pour simplifier les parcours, améliorer l’ergonomie et rendre le produit plus accessible à un plus grand nombre d’utilisateurs.'
+          },
+          chapters: [
+            {
+              title: '1. Empathie',
+              paragraphs: [
+                'Cette première étape visait à comprendre les profils pour lesquels nous concevions le projet. J’ai mené des entretiens avec des parties prenantes, des clients ainsi qu’un questionnaire envoyé à un panel plus large.',
+                'Situation : peu de visibilité sur les usages, les irritants réels et la perception client du produit.',
+                'Objectif : comprendre les utilisateurs, leur environnement de travail et la manière dont ils se sont approprié l’outil.',
+                'Résultat : au-delà des bugs, les utilisateurs exprimaient surtout un besoin de simplicité, d’ergonomie et de meilleure documentation.'
+              ],
+              imageGroups: [
+                {
+                  title: 'Synthèse de recherche',
+                  columns: 1,
+                  images: [{ src: '/assets/daxium-case/daxium-case-1.png', alt: 'Synthèse d’atelier Daxium' }]
+                }
+              ]
+            },
+            {
+              title: '2. Définir',
+              paragraphs: [
+                'À partir de la recherche, j’ai construit plusieurs personas pour représenter les besoins des différents métiers adressés par Daxium : terrain, management et paramétrage.',
+                'Cette phase a permis de formaliser les objectifs, les frustrations et les attentes de chaque profil avant de cartographier leurs parcours d’usage.'
+              ],
+              imageGroups: [
+                {
+                  title: 'Personas',
+                  columns: 1,
+                  images: [
+                    { src: '/assets/daxium-case/daxium-case-2.png', alt: 'Persona Terrain Thierry' },
+                    { src: '/assets/daxium-case/daxium-case-3.png', alt: 'Persona Manager Marc' },
+                    { src: '/assets/daxium-case/daxium-case-4.png', alt: 'Persona Paramétreur Paul' }
+                  ]
+                },
+                {
+                  title: 'Parcours utilisateurs',
+                  columns: 1,
+                  images: [
+                    { src: '/assets/daxium-case/daxium-case-5.png', alt: 'User journey map Paramétreur Paul' },
+                    { src: '/assets/daxium-case/daxium-case-6.png', alt: 'User journey map Manager Marc' },
+                    { src: '/assets/daxium-case/daxium-case-7.png', alt: 'User journey map Terrain Thierry' }
+                  ]
+                }
+              ],
+              bullets: [
+                'Thierry a besoin d’une solution claire et simple pour se concentrer sur son métier, et non sur l’outil.',
+                'Il lui faut un environnement qui parle son vocabulaire et s’adapte à ses réalités terrain.',
+                'Le remplissage des données doit être plus rapide, plus fluide et plus structuré.',
+                'L’ajout de données externes doit devenir simple pour éviter les pertes de temps et les erreurs.'
+              ]
+            },
+            {
+              title: '3. Idéation',
+              paragraphs: [
+                'Cette phase consistait à transformer les irritants identifiés en opportunités de conception.',
+                'Situation : nous disposions d’une base solide de besoins et de points de friction.',
+                'Objectif : générer des idées, ouvrir les pistes de solution et structurer des axes de travail concrets.',
+                'Résultat : quatre grands chantiers se sont dégagés, autour du dashboard, de l’ergonomie métier, de la communication et de nouvelles fonctionnalités.'
+              ],
+              imageGroups: [
+                {
+                  title: 'Questions “Comment pourrions-nous ?”',
+                  columns: 2,
+                  images: [
+                    { src: '/assets/daxium-case/daxium-case-8.png', alt: 'Première planche d’idéation Daxium' },
+                    { src: '/assets/daxium-case/daxium-case-9.png', alt: 'Deuxième planche d’idéation Daxium' }
+                  ]
+                },
+                {
+                  title: 'Les solutions',
+                  columns: 1,
+                  images: [{ src: '/assets/daxium-case/daxium-case-10.png', alt: 'Pistes de solutions Daxium' }]
+                },
+                {
+                  title: 'Matrice de priorisation',
+                  columns: 1,
+                  images: [{ src: '/assets/daxium-case/daxium-case-11.png', alt: 'Matrice de priorisation Daxium' }]
+                }
+              ]
+            },
+            {
+              title: '4. Prototype',
+              paragraphs: [
+                'Les parcours prioritaires ont ensuite été traduits en flux, en wireframes puis en propositions d’interface plus détaillées.',
+                'L’idée était de rendre le produit plus intuitif, plus actionnable et plus cohérent entre la logique desktop et la logique mobile.'
+              ],
+              imageGroups: [
+                {
+                  title: 'Flux de parcours',
+                  columns: 1,
+                  images: [
+                    { src: '/assets/daxium-case/daxium-case-12.png', alt: 'Flow Terrain Thierry' },
+                    { src: '/assets/daxium-case/daxium-case-13.png', alt: 'Flow Paramétreur Paul' }
+                  ]
+                },
+                {
+                  title: 'Croquis et wireframes',
+                  columns: 2,
+                  images: [
+                    { src: '/assets/daxium-case/daxium-case-14.png', alt: 'Croquis de parcours Daxium' },
+                    { src: '/assets/daxium-case/daxium-case-15.png', alt: 'Croquis d’écrans Daxium' }
+                  ]
+                }
+              ]
+            },
+            {
+              title: '5. Tests',
+              paragraphs: [
+                'Les prototypes ont été testés avec un panel d’utilisateurs afin de valider les principaux scénarios d’usage.',
+                'Les retours ont été globalement très positifs : la proposition a été jugée plus claire, plus simple et mieux adaptée aux besoins métier.',
+                'Les remarques ont principalement porté sur l’ajustement de certains filtres, de la recherche et de la hiérarchisation de certaines informations.'
+              ]
+            },
+            {
+              title: 'Conclusion',
+              paragraphs: [
+                'Ce projet a permis de repositionner Daxium sur une logique d’usage plus lisible et plus centrée métier.',
+                'Malgré une dette technique existante, le redesign a ouvert des pistes concrètes pour rendre le produit plus simple, plus cohérent et plus agréable à utiliser au quotidien.'
+              ]
+            }
+          ]
+        },
         sections: [
           {
             title: 'Contexte',
@@ -752,6 +868,10 @@ export default function App() {
     () => (currentProject ? currentProject.sections || getDefaultProjectSections(currentProject, profile.projectPage) : []),
     [currentProject, profile]
   );
+  const daxiumCaseStudy = useMemo(
+    () => (language === 'fr' && currentProject?.slug === 'daxium' ? currentProject.caseStudy || null : null),
+    [currentProject, language]
+  );
 
   useEffect(() => {
     function handleHashChange() {
@@ -980,76 +1100,141 @@ export default function App() {
             <div className="project-page-wave" aria-hidden="true" />
           </section>
 
-          {currentProject.gallery ? (
-            <section className="project-story-section project-gallery-section">
-              <div className="container project-gallery-shell">
-                <div className="project-story-title project-gallery-title">
-                  <h2>{profile.projectPage.gallery}</h2>
-                </div>
-                {currentProject.slug === 'banque-francaise-mutualiste' ? (
-                  <>
-                    <div className="project-gallery-grid">
-                      {currentProject.gallery.slice(0, 5).map((visual) => (
-                        <figure key={visual.src} className="project-gallery-card">
-                          <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
-                        </figure>
+          {daxiumCaseStudy ? (
+            <>
+              <section className="project-story-section project-case-intro-section">
+                <div className="container project-case-intro-shell">
+                  <div className="project-case-intro-grid">
+                    <div className="project-story-title">
+                      <h2>{daxiumCaseStudy.intro.title}</h2>
+                    </div>
+                    <div className="project-story-content project-case-paragraphs">
+                      {daxiumCaseStudy.intro.side.map((paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
                       ))}
                     </div>
-                    <div className="project-gallery-divider">
-                      <h3>L'espace client BFM partie crédit : AVANT</h3>
-                    </div>
-                    <div className="project-gallery-grid">
-                      {currentProject.gallery.slice(5).map((visual) => (
-                        <figure key={visual.src} className="project-gallery-card">
-                          <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
-                        </figure>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <div className="project-gallery-grid">
-                    {currentProject.gallery.map((visual) => (
-                      <figure key={visual.src} className="project-gallery-card">
-                        <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
-                      </figure>
-                    ))}
                   </div>
-                )}
-              </div>
-            </section>
-          ) : null}
-
-          {projectSections.map((section, index) => (
-            <section key={`${currentProject.slug}-${section.title}-${index}`} className="project-story-section">
-              <div className="container project-story-grid">
-                <div className="project-story-title">
-                  <h2>{section.title}</h2>
-                  {section.subtitle ? <h3>{section.subtitle}</h3> : null}
+                  <div className="project-case-intro-footer">
+                    <p>{daxiumCaseStudy.intro.footer}</p>
+                  </div>
                 </div>
-                <div className="project-story-content">
-                  {section.text ? <p>{section.text}</p> : null}
-                  {section.bullets ? (
-                    <ul className="project-story-list">
-                      {section.bullets.map((item) => (
-                        <li key={item}>{item}</li>
+              </section>
+
+              {daxiumCaseStudy.chapters.map((chapter) => (
+                <section key={`${currentProject.slug}-${chapter.title}`} className="project-story-section project-case-section">
+                  <div className="container project-story-grid">
+                    <div className="project-story-title">
+                      <h2>{chapter.title}</h2>
+                    </div>
+                    <div className="project-story-content project-case-paragraphs">
+                      {chapter.paragraphs?.map((paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
                       ))}
-                    </ul>
-                  ) : null}
-                  {section.columns ? (
-                    <div className="project-story-columns">
-                      {section.columns.map((column, columnIndex) => (
-                        <ul key={`${section.title}-col-${columnIndex}`} className="project-story-list">
-                          {column.map((item) => (
+                      {chapter.bullets ? (
+                        <ul className="project-story-list">
+                          {chapter.bullets.map((item) => (
                             <li key={item}>{item}</li>
                           ))}
                         </ul>
+                      ) : null}
+                    </div>
+                  </div>
+
+                  {chapter.imageGroups?.length ? (
+                    <div className="container project-case-shell">
+                      {chapter.imageGroups.map((group) => (
+                        <div key={`${chapter.title}-${group.title}`} className="project-case-group">
+                          <div className="project-case-group-head">
+                            <h3>{group.title}</h3>
+                          </div>
+                          <div className={`project-gallery-grid project-case-grid project-case-grid-${group.columns || 2}`}>
+                            {group.images.map((visual) => (
+                              <figure key={visual.src} className="project-gallery-card">
+                                <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                              </figure>
+                            ))}
+                          </div>
+                        </div>
                       ))}
                     </div>
                   ) : null}
-                </div>
-              </div>
-            </section>
-          ))}
+                </section>
+              ))}
+            </>
+          ) : (
+            <>
+              {currentProject.gallery ? (
+                <section className="project-story-section project-gallery-section">
+                  <div className="container project-gallery-shell">
+                    <div className="project-story-title project-gallery-title">
+                      <h2>{profile.projectPage.gallery}</h2>
+                    </div>
+                    {currentProject.slug === 'banque-francaise-mutualiste' ? (
+                      <>
+                        <div className="project-gallery-grid">
+                          {currentProject.gallery.slice(0, 5).map((visual) => (
+                            <figure key={visual.src} className="project-gallery-card">
+                              <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                            </figure>
+                          ))}
+                        </div>
+                        <div className="project-gallery-divider">
+                          <h3>L'espace client BFM partie crédit : AVANT</h3>
+                        </div>
+                        <div className="project-gallery-grid">
+                          {currentProject.gallery.slice(5).map((visual) => (
+                            <figure key={visual.src} className="project-gallery-card">
+                              <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                            </figure>
+                          ))}
+                        </div>
+                      </>
+                    ) : (
+                      <div className="project-gallery-grid">
+                        {currentProject.gallery.map((visual) => (
+                          <figure key={visual.src} className="project-gallery-card">
+                            <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                          </figure>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </section>
+              ) : null}
+
+              {projectSections.map((section, index) => (
+                <section key={`${currentProject.slug}-${section.title}-${index}`} className="project-story-section">
+                  <div className="container project-story-grid">
+                    <div className="project-story-title">
+                      <h2>{section.title}</h2>
+                      {section.subtitle ? <h3>{section.subtitle}</h3> : null}
+                    </div>
+                    <div className="project-story-content">
+                      {section.text ? <p>{section.text}</p> : null}
+                      {section.bullets ? (
+                        <ul className="project-story-list">
+                          {section.bullets.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+                      {section.columns ? (
+                        <div className="project-story-columns">
+                          {section.columns.map((column, columnIndex) => (
+                            <ul key={`${section.title}-col-${columnIndex}`} className="project-story-list">
+                              {column.map((item) => (
+                                <li key={item}>{item}</li>
+                              ))}
+                            </ul>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
+                  </div>
+                </section>
+              ))}
+            </>
+          )}
 
           <section className="section section-projects">
             <div className="container section-top">
