@@ -175,45 +175,28 @@ const content = {
                 'Objectif : comprendre les utilisateurs, leur environnement de travail et la manière dont ils se sont approprié l’outil.',
                 'Résultat : au-delà des bugs, les utilisateurs exprimaient surtout un besoin de simplicité, d’ergonomie et de meilleure documentation.'
               ],
-              imageGroups: [
-                {
-                  title: 'Synthèse de recherche',
-                  columns: 1,
-                  images: [{ src: '/assets/daxium-case/daxium-case-1.png', alt: 'Synthèse d’atelier Daxium' }]
-                }
+              bullets: [
+                'Les utilisateurs terrain attendent un outil plus direct, avec moins de friction dans l’exécution des tâches.',
+                'Les managers ont besoin d’une meilleure visibilité sur l’avancement, les indicateurs et les anomalies.',
+                'Les paramétreurs souhaitent davantage d’autonomie, une prise en main plus simple et une logique de configuration plus claire.'
               ]
             },
             {
               title: '2. Définir',
               paragraphs: [
                 'À partir de la recherche, j’ai construit plusieurs personas pour représenter les besoins des différents métiers adressés par Daxium : terrain, management et paramétrage.',
-                'Cette phase a permis de formaliser les objectifs, les frustrations et les attentes de chaque profil avant de cartographier leurs parcours d’usage.'
-              ],
-              imageGroups: [
-                {
-                  title: 'Personas',
-                  columns: 1,
-                  images: [
-                    { src: '/assets/daxium-case/daxium-case-2.png', alt: 'Persona Terrain Thierry' },
-                    { src: '/assets/daxium-case/daxium-case-3.png', alt: 'Persona Manager Marc' },
-                    { src: '/assets/daxium-case/daxium-case-4.png', alt: 'Persona Paramétreur Paul' }
-                  ]
-                },
-                {
-                  title: 'Parcours utilisateurs',
-                  columns: 1,
-                  images: [
-                    { src: '/assets/daxium-case/daxium-case-5.png', alt: 'User journey map Paramétreur Paul' },
-                    { src: '/assets/daxium-case/daxium-case-6.png', alt: 'User journey map Manager Marc' },
-                    { src: '/assets/daxium-case/daxium-case-7.png', alt: 'User journey map Terrain Thierry' }
-                  ]
-                }
+                'Cette phase a permis de formaliser les objectifs, les frustrations et les attentes de chaque profil avant de cartographier leurs parcours d’usage.',
+                'Terrain Thierry, 32 ans, employé-contrôleur, cherche avant tout à gagner du temps sur le terrain et à transmettre les bonnes données sans complexité inutile.',
+                'Manager Marc, 35 ans, a besoin d’une vision globale de l’activité de ses équipes, d’indicateurs rapidement lisibles et d’une communication plus fluide avec les collaborateurs.',
+                'Paramétreur Paul, 37 ans, responsable projet IT, attend un outil no-code puissant mais accessible, suffisamment souple pour paramétrer sans perdre de temps.'
               ],
               bullets: [
                 'Thierry a besoin d’une solution claire et simple pour se concentrer sur son métier, et non sur l’outil.',
                 'Il lui faut un environnement qui parle son vocabulaire et s’adapte à ses réalités terrain.',
                 'Le remplissage des données doit être plus rapide, plus fluide et plus structuré.',
-                'L’ajout de données externes doit devenir simple pour éviter les pertes de temps et les erreurs.'
+                'L’ajout de données externes doit devenir simple pour éviter les pertes de temps et les erreurs.',
+                'Le parcours de Marc montre un besoin fort de dashboard, de synthèse et d’accès mobile à l’information.',
+                'Le parcours de Paul révèle des attentes fortes sur le paramétrage, la personnalisation, les modèles et l’autonomie dans la configuration.'
               ]
             },
             {
@@ -224,50 +207,28 @@ const content = {
                 'Objectif : générer des idées, ouvrir les pistes de solution et structurer des axes de travail concrets.',
                 'Résultat : quatre grands chantiers se sont dégagés, autour du dashboard, de l’ergonomie métier, de la communication et de nouvelles fonctionnalités.'
               ],
-              imageGroups: [
-                {
-                  title: 'Questions “Comment pourrions-nous ?”',
-                  columns: 2,
-                  images: [
-                    { src: '/assets/daxium-case/daxium-case-8.png', alt: 'Première planche d’idéation Daxium' },
-                    { src: '/assets/daxium-case/daxium-case-9.png', alt: 'Deuxième planche d’idéation Daxium' }
-                  ]
-                },
-                {
-                  title: 'Les solutions',
-                  columns: 1,
-                  images: [{ src: '/assets/daxium-case/daxium-case-10.png', alt: 'Pistes de solutions Daxium' }]
-                },
-                {
-                  title: 'Matrice de priorisation',
-                  columns: 1,
-                  images: [{ src: '/assets/daxium-case/daxium-case-11.png', alt: 'Matrice de priorisation Daxium' }]
-                }
+              bullets: [
+                'Simplifier l’accueil et proposer une lecture plus claire des actions prioritaires.',
+                'Mieux structurer le dashboard pour donner une vision rapide de l’activité.',
+                'Créer des messages d’erreur plus utiles et plus compréhensibles.',
+                'Fluidifier la communication entre terrain, management et paramétrage.',
+                'Réduire le nombre d’étapes dans les tâches récurrentes et rendre les formulaires plus intuitifs.'
               ]
             },
             {
               title: '4. Prototype',
               paragraphs: [
                 'Les parcours prioritaires ont ensuite été traduits en flux, en wireframes puis en propositions d’interface plus détaillées.',
-                'L’idée était de rendre le produit plus intuitif, plus actionnable et plus cohérent entre la logique desktop et la logique mobile.'
+                'L’idée était de rendre le produit plus intuitif, plus actionnable et plus cohérent entre la logique desktop et la logique mobile.',
+                'Pour Thierry, le flux a été pensé autour d’une logique simple : se connecter, choisir la tâche pertinente, accéder rapidement à la fiche, consulter les données utiles, compléter puis envoyer.',
+                'Pour Paul, le prototype s’est concentré sur la création et la modification de formulaires, la gestion des champs, des pages, des sous-pages, des autorisations et des workflows.',
+                'Les premiers croquis ont également exploré une page d’accueil avec recherche, favoris, statut des fiches et tâches du jour afin de rendre l’outil plus pilotable dès l’entrée dans le produit.'
               ],
-              imageGroups: [
-                {
-                  title: 'Flux de parcours',
-                  columns: 1,
-                  images: [
-                    { src: '/assets/daxium-case/daxium-case-12.png', alt: 'Flow Terrain Thierry' },
-                    { src: '/assets/daxium-case/daxium-case-13.png', alt: 'Flow Paramétreur Paul' }
-                  ]
-                },
-                {
-                  title: 'Croquis et wireframes',
-                  columns: 2,
-                  images: [
-                    { src: '/assets/daxium-case/daxium-case-14.png', alt: 'Croquis de parcours Daxium' },
-                    { src: '/assets/daxium-case/daxium-case-15.png', alt: 'Croquis d’écrans Daxium' }
-                  ]
-                }
+              bullets: [
+                'Clarification de la page d’accueil et des raccourcis clés.',
+                'Meilleure hiérarchisation des fiches, statuts et actions disponibles.',
+                'Réflexion sur une logique de formulaire plus progressive et plus compréhensible.',
+                'Recherche d’une continuité plus forte entre desktop, web mobile et usages terrain.'
               ]
             },
             {
@@ -275,13 +236,15 @@ const content = {
               paragraphs: [
                 'Les prototypes ont été testés avec un panel d’utilisateurs afin de valider les principaux scénarios d’usage.',
                 'Les retours ont été globalement très positifs : la proposition a été jugée plus claire, plus simple et mieux adaptée aux besoins métier.',
-                'Les remarques ont principalement porté sur l’ajustement de certains filtres, de la recherche et de la hiérarchisation de certaines informations.'
+                'Les remarques ont principalement porté sur l’ajustement de certains filtres, de la recherche et de la hiérarchisation de certaines informations.',
+                'Cette phase a confirmé que les nouvelles propositions allaient dans le bon sens, tout en mettant en lumière quelques optimisations nécessaires avant industrialisation.'
               ]
             },
             {
               title: 'Conclusion',
               paragraphs: [
                 'Ce projet a permis de repositionner Daxium sur une logique d’usage plus lisible et plus centrée métier.',
+                'Le projet était riche, complet et a permis de structurer une vision produit plus mature autour des usages réels.',
                 'Malgré une dette technique existante, le redesign a ouvert des pistes concrètes pour rendre le produit plus simple, plus cohérent et plus agréable à utiliser au quotidien.'
               ]
             }
@@ -1139,25 +1102,6 @@ export default function App() {
                       ) : null}
                     </div>
                   </div>
-
-                  {chapter.imageGroups?.length ? (
-                    <div className="container project-case-shell">
-                      {chapter.imageGroups.map((group) => (
-                        <div key={`${chapter.title}-${group.title}`} className="project-case-group">
-                          <div className="project-case-group-head">
-                            <h3>{group.title}</h3>
-                          </div>
-                          <div className={`project-gallery-grid project-case-grid project-case-grid-${group.columns || 2}`}>
-                            {group.images.map((visual) => (
-                              <figure key={visual.src} className="project-gallery-card">
-                                <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
-                              </figure>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  ) : null}
                 </section>
               ))}
             </>
