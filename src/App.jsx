@@ -175,6 +175,13 @@ const content = {
                 'Objectif : comprendre les utilisateurs, leur environnement de travail et la manière dont ils se sont approprié l’outil.',
                 'Résultat : au-delà des bugs, les utilisateurs exprimaient surtout un besoin de simplicité, d’ergonomie et de meilleure documentation.'
               ],
+              imageGroups: [
+                {
+                  title: 'Synthèse de recherche',
+                  columns: 1,
+                  images: [{ src: '/assets/daxium/daxium-1.png', alt: 'Synthèse d’atelier Daxium' }]
+                }
+              ],
               bullets: [
                 'Les utilisateurs terrain attendent un outil plus direct, avec moins de friction dans l’exécution des tâches.',
                 'Les managers ont besoin d’une meilleure visibilité sur l’avancement, les indicateurs et les anomalies.',
@@ -189,6 +196,26 @@ const content = {
                 'Terrain Thierry, 32 ans, employé-contrôleur, cherche avant tout à gagner du temps sur le terrain et à transmettre les bonnes données sans complexité inutile.',
                 'Manager Marc, 35 ans, a besoin d’une vision globale de l’activité de ses équipes, d’indicateurs rapidement lisibles et d’une communication plus fluide avec les collaborateurs.',
                 'Paramétreur Paul, 37 ans, responsable projet IT, attend un outil no-code puissant mais accessible, suffisamment souple pour paramétrer sans perdre de temps.'
+              ],
+              imageGroups: [
+                {
+                  title: 'Personas',
+                  columns: 1,
+                  images: [
+                    { src: '/assets/daxium/daxium-2.png', alt: 'Persona Terrain Thierry' },
+                    { src: '/assets/daxium/daxium-3.png', alt: 'Persona Manager Marc' },
+                    { src: '/assets/daxium/daxium-4.png', alt: 'Persona Paramétreur Paul' }
+                  ]
+                },
+                {
+                  title: 'Parcours utilisateurs',
+                  columns: 1,
+                  images: [
+                    { src: '/assets/daxium/daxium-5.png', alt: 'User journey map Paramétreur Paul' },
+                    { src: '/assets/daxium/daxium-6.png', alt: 'User journey map Manager Marc' },
+                    { src: '/assets/daxium/daxium-7.png', alt: 'User journey map Terrain Thierry' }
+                  ]
+                }
               ],
               bullets: [
                 'Thierry a besoin d’une solution claire et simple pour se concentrer sur son métier, et non sur l’outil.',
@@ -207,6 +234,26 @@ const content = {
                 'Objectif : générer des idées, ouvrir les pistes de solution et structurer des axes de travail concrets.',
                 'Résultat : quatre grands chantiers se sont dégagés, autour du dashboard, de l’ergonomie métier, de la communication et de nouvelles fonctionnalités.'
               ],
+              imageGroups: [
+                {
+                  title: 'Questions “Comment pourrions-nous ?”',
+                  columns: 2,
+                  images: [
+                    { src: '/assets/daxium/daxium-8.png', alt: 'Contexte d’idéation Daxium' },
+                    { src: '/assets/daxium/daxium-9.png', alt: 'Première planche d’idéation Daxium' }
+                  ]
+                },
+                {
+                  title: 'Les solutions',
+                  columns: 1,
+                  images: [{ src: '/assets/daxium/daxium-10.png', alt: 'Les solutions Daxium' }]
+                },
+                {
+                  title: 'Matrice de priorisation',
+                  columns: 1,
+                  images: [{ src: '/assets/daxium/daxium-11.png', alt: 'Matrice de priorisation Daxium' }]
+                }
+              ],
               bullets: [
                 'Simplifier l’accueil et proposer une lecture plus claire des actions prioritaires.',
                 'Mieux structurer le dashboard pour donner une vision rapide de l’activité.',
@@ -223,6 +270,24 @@ const content = {
                 'Pour Thierry, le flux a été pensé autour d’une logique simple : se connecter, choisir la tâche pertinente, accéder rapidement à la fiche, consulter les données utiles, compléter puis envoyer.',
                 'Pour Paul, le prototype s’est concentré sur la création et la modification de formulaires, la gestion des champs, des pages, des sous-pages, des autorisations et des workflows.',
                 'Les premiers croquis ont également exploré une page d’accueil avec recherche, favoris, statut des fiches et tâches du jour afin de rendre l’outil plus pilotable dès l’entrée dans le produit.'
+              ],
+              imageGroups: [
+                {
+                  title: 'Flux de parcours',
+                  columns: 1,
+                  images: [
+                    { src: '/assets/daxium/daxium-12.png', alt: 'Flow Terrain Thierry' },
+                    { src: '/assets/daxium/daxium-13.png', alt: 'Flow Paramétreur Paul' }
+                  ]
+                },
+                {
+                  title: 'Croquis et wireframes',
+                  columns: 2,
+                  images: [
+                    { src: '/assets/daxium/daxium-12.png', alt: 'Flow de parcours Daxium' },
+                    { src: '/assets/daxium/daxium-13.png', alt: 'Flow de paramétrage Daxium' }
+                  ]
+                }
               ],
               bullets: [
                 'Clarification de la page d’accueil et des raccourcis clés.',
@@ -1102,6 +1167,24 @@ export default function App() {
                       ) : null}
                     </div>
                   </div>
+                  {chapter.imageGroups?.length ? (
+                    <div className="container project-case-shell">
+                      {chapter.imageGroups.map((group) => (
+                        <div key={`${chapter.title}-${group.title}`} className="project-case-group">
+                          <div className="project-case-group-head">
+                            <h3>{group.title}</h3>
+                          </div>
+                          <div className={`project-gallery-grid project-case-grid project-case-grid-${group.columns || 2}`}>
+                            {group.images.map((visual) => (
+                              <figure key={visual.src} className="project-gallery-card">
+                                <img className="project-gallery-image" src={visual.src} alt={visual.alt} />
+                              </figure>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
                 </section>
               ))}
             </>
